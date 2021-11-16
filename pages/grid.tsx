@@ -73,18 +73,6 @@ export default function Grid() {
               </Card>
             </div>
           </div>
-
-          {/* Image */}
-          <div className="space-y-8">
-            <Text as="h3">Image</Text>
-            <div className="flex flex-col gap-8 md:flex-row border border-gray-200 rounded-md p-6">
-              <Card>
-                <div className="relative w-32 h-32">
-                  <Image src="/favicon/icon-512.png" alt="Logo" layout="fill" />
-                </div>
-              </Card>
-            </div>
-          </div>
         </div>
       </div>
     </Page>
