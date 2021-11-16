@@ -1,0 +1,58 @@
+.root {
+  @apply absolute w-auto z-50 shadow-sm;
+}
+
+.inner {
+  @apply relative;
+}
+
+/* Rounded */
+.square {
+  @apply rounded-none;
+}
+
+.rounded {
+  @apply rounded-md;
+}
+
+.circle {
+  @apply rounded-full;
+}
+
+/* Sizes */
+.small {
+  @apply py-1 px-2 text-sm;
+}
+
+.small.circle {
+  @apply px-4;
+}
+
+.medium {
+  @apply py-1.5 px-3;
+}
+
+.large {
+  @apply py-3.5 px-5;
+}
+
+/* Colors */
+.primary {
+  @apply bg-black text-white;
+}
+
+.secondary {
+  @apply bg-white text-black;
+}
+
+.success {
+  @apply bg-green-400 text-white;
+}
+
+.warning {
+  @apply bg-yellow-400 text-white;
+}
+
+.error {
+  @apply bg-red-400 text-white;
+}

@@ -1,0 +1,242 @@
+.reset {
+  outline: none;
+  font-family: inherit;
+  vertical-align: middle;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.base {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: none;
+}
+
+.root {
+  @apply flex items-center justify-center font-normal py-0 px-3 rounded-md max-w-full;
+  transition-property: border-color, background, color, transform, box-shadow;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.root:not(.shape) svg:first-child {
+  @apply mr-2;
+}
+
+.root:not(.shape) svg:not(:first-child) {
+  @apply ml-2;
+}
+
+/* Colors */
+.primary {
+  @apply bg-black text-white border border-black;
+  box-shadow: none;
+}
+
+.primary:hover {
+  box-shadow: none;
+  @apply bg-white text-black border-black;
+}
+
+/* .secondary {
+  @apply bg-white text-gray-500 border border-gray-200 ;
+  box-shadow: none;
+}
+
+.secondary:hover {
+  box-shadow: none;
+  @apply bg-white text-gray-900 border-gray-900;
+} */
+
+.secondary {
+  @apply bg-gray-500 text-white border border-gray-500;
+  box-shadow: none;
+}
+
+.secondary:hover {
+  box-shadow: none;
+  @apply bg-white text-gray-500 border-gray-500;
+}
+
+.success {
+  @apply bg-green-500 text-white border border-green-500;
+  box-shadow: none;
+}
+
+.success:hover {
+  box-shadow: none;
+  @apply bg-white text-green-500 border-green-500;
+}
+
+.warning {
+  @apply bg-yellow-500 text-white border border-yellow-500;
+  box-shadow: none;
+}
+
+.warning:hover {
+  box-shadow: none;
+  @apply bg-white text-yellow-500 border-yellow-500;
+}
+
+.error {
+  @apply bg-red-500 text-white border border-red-500;
+  box-shadow: none;
+}
+
+.error:hover {
+  box-shadow: none;
+  @apply bg-white text-red-500 border-red-500;
+}
+
+/* Ghost */
+.primary.ghost {
+  @apply bg-white text-black;
+}
+
+.primary.ghost:hover {
+  box-shadow: none;
+  @apply bg-black text-white border-white;
+}
+
+.secondary.ghost {
+  @apply bg-white text-gray-500;
+}
+
+.secondary.ghost:hover {
+  box-shadow: none;
+  @apply bg-gray-500 text-white border-white;
+}
+
+.success.ghost {
+  @apply bg-white text-green-500;
+}
+
+.success.ghost:hover {
+  box-shadow: none;
+  @apply bg-green-500 text-white border-white;
+}
+
+.warning.ghost {
+  @apply bg-white text-yellow-500;
+}
+
+.warning.ghost:hover {
+  box-shadow: none;
+  @apply bg-yellow-500 text-white border-white;
+}
+
+.error.ghost {
+  @apply bg-white text-red-500;
+}
+
+.error.ghost:hover {
+  box-shadow: none;
+  @apply bg-red-500 text-white border-white;
+}
+
+/* Blend */
+.primary.blend {
+  @apply bg-transparent text-black border-transparent;
+}
+
+.primary.blend:hover {
+  @apply bg-gray-200;
+}
+
+.secondary.blend {
+  @apply bg-transparent text-gray-600 border-transparent;
+}
+
+.secondary.blend:hover {
+  @apply bg-gray-200;
+}
+
+.success.blend {
+  @apply bg-transparent text-green-600 border-transparent;
+}
+
+.success.blend:hover {
+  @apply bg-green-200;
+}
+
+.warning.blend {
+  @apply bg-transparent text-yellow-600 border-transparent;
+}
+
+.warning.blend:hover {
+  @apply bg-yellow-100;
+}
+
+.error.blend {
+  @apply bg-transparent text-red-600 border-transparent;
+}
+
+.error.blend:hover {
+  @apply bg-red-200;
+}
+
+/* Sizes */
+.small {
+  @apply text-sm h-8;
+}
+
+.small svg {
+  @apply w-4 h-4;
+}
+
+.small.shape {
+  @apply w-8;
+}
+
+/* .small.shape svg {
+  @apply w-4 h-4;
+} */
+
+.medium {
+  @apply text-sm h-10;
+}
+
+.medium svg {
+  @apply w-5 h-5;
+}
+
+.medium.shape {
+  @apply w-10;
+}
+
+/* .medium.shape svg {
+  @apply w-5 h-5;
+} */
+
+.large {
+  @apply text-base h-12;
+}
+
+.large svg {
+  @apply w-6 h-6;
+}
+
+.large.shape {
+  @apply w-12;
+}
+
+/* .large.shape svg {
+  @apply w-6 h-6;
+} */
+
+/* Shapes */
+.shape {
+  @apply p-0;
+}
+
+.square {
+  @apply rounded-md;
+}
+
+.circle {
+  @apply rounded-full;
+}

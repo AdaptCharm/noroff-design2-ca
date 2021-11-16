@@ -1,0 +1,41 @@
+.root {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Variants */
+.primary {
+  @apply text-black;
+}
+
+.primary:hover {
+  @apply underline;
+}
+
+/* .primary:hover {
+  @apply bg-gradient-to-r from-black to-black;
+  background-size: 100% 1 px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+} */
+
+.secondary {
+  @apply text-gray-500;
+  transition: color 0.1s ease;
+}
+
+.secondary:hover {
+  @apply text-black;
+}
+
+.blend {
+  color: inherit;
+  transition: opacity 0.1s ease;
+  font-weight: 500;
+}
+
+.blend:hover {
+  opacity: 0.6;
+}

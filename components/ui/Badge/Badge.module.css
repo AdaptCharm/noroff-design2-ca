@@ -1,0 +1,50 @@
+.root {
+  @apply inline-flex items-center capitalize;
+}
+
+/* Colors */
+.primary {
+  @apply bg-black text-white;
+}
+
+.secondary {
+  @apply bg-gray-100 text-gray-600;
+}
+
+.success {
+  @apply bg-green-100 text-green-600;
+}
+
+.warning {
+  @apply bg-yellow-100 text-yellow-600;
+}
+
+.error {
+  @apply bg-red-100 text-red-600;
+}
+
+/* Sizes */
+.small {
+  @apply text-xs px-2.5 py-0.5;
+}
+
+.medium {
+  @apply text-sm font-medium px-3.5 py-0.5;
+}
+
+.large {
+  @apply text-lg px-4 py-0.5;
+}
+
+/* Shapes */
+.circle {
+  @apply rounded-full;
+}
+
+.rounded {
+  @apply rounded-md;
+}
+
+.square {
+  @apply rounded-none;
+}

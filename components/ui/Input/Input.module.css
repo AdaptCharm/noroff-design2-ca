@@ -1,0 +1,131 @@
+.root {
+  @apply flex items-center max-w-full h-full text-sm;
+}
+
+.input {
+  @apply appearance-none font-normal outline-none inline-flex min-w-0 w-full rounded-md px-3 bg-white border border-gray-200 focus:border-black transition-colors ease-[ease] duration-150 order-1;
+}
+
+.input::placeholder {
+  @apply font-light;
+}
+
+/* Capitalize single words */
+.capitalize .input::placeholder {
+  @apply capitalize;
+}
+
+/* Sizes */
+.small .input {
+  @apply text-sm h-8;
+}
+
+.small svg {
+  @apply w-4 h-4;
+}
+
+.medium .input {
+  @apply text-sm h-10;
+}
+
+.medium svg {
+  @apply w-5 h-5;
+}
+
+.large .input {
+  @apply text-base h-12;
+}
+
+.large svg {
+  @apply w-6 h-6;
+}
+
+/* Prefix & Suffix */
+.prefix > :nth-child(2),
+.suffix > :last-child {
+  @apply relative flex-shrink-0 px-3 bg-gray-100 text-gray-400 border border-gray-200 flex items-center transition-colors ease-[ease] duration-150;
+}
+
+.prefix > :nth-child(2) {
+  @apply order-none border-r-0 rounded-l-md;
+}
+
+.suffix > :last-child {
+  @apply order-2 border-l-0 rounded-r-md;
+}
+
+.small.prefix > :nth-child(2),
+.small.suffix > :last-child {
+  @apply h-8 text-sm;
+}
+
+.small svg path {
+  @apply stroke-[1.5px];
+}
+
+.medium.prefix > :nth-child(2),
+.medium.suffix > :last-child {
+  @apply h-10 text-sm;
+}
+
+.medium svg path {
+  @apply stroke-[1.5px];
+}
+
+.large.prefix > :nth-child(2),
+.large.suffix > :last-child {
+  @apply h-12 text-base;
+}
+
+.large svg path {
+  @apply stroke-[1.5px];
+}
+
+.prefix .input {
+  @apply rounded-tl-none rounded-bl-none;
+}
+
+.suffix .input {
+  @apply rounded-tr-none rounded-br-none;
+}
+
+/* No Input, Prefix & Suffix styling */
+.prefix.noPrefixStyle .input {
+  @apply border-l-0;
+}
+
+.prefix.noPrefixStyle > :nth-child(2) {
+  @apply bg-white -mr-3 border-gray-200;
+}
+
+.prefix.noPrefixStyle .input:focus + *,
+.suffix.noSuffixStyle .input:focus ~ :last-child {
+  @apply border-black;
+}
+
+.suffix.noSuffixStyle .input {
+  @apply border-r-0;
+}
+
+.suffix.noSuffixStyle > :last-child {
+  @apply bg-white -ml-3 border-gray-200;
+}
+
+/* Disabled */
+.disabled .input,
+.disabled.prefix > :nth-child(2),
+.disabled.suffix > :last-child {
+  @apply bg-gray-100 border-gray-200 opacity-100 cursor-not-allowed;
+}
+
+.disabled::before {
+  @apply bg-white backdrop-blur backdrop-filter bg-opacity-10;
+}
+
+.disabled .input[disabled] {
+  @apply text-blue-500;
+}
+
+.disabled svg {
+  @apply text-gray-300;
+}

@@ -1,0 +1,131 @@
+/* Default font styles */
+.h1 {
+  @apply text-5xl font-bold tracking-tight text-black;
+}
+
+.h2 {
+  @apply text-4xl font-semibold text-gray-500;
+}
+
+.h3 {
+  @apply text-2xl font-semibold tracking-tight text-black;
+}
+
+.h4 {
+  @apply text-xl font-semibold tracking-tight;
+}
+
+.h5 {
+  @apply text-base font-semibold tracking-tight;
+}
+
+.h6 {
+  @apply text-sm font-semibold tracking-tight;
+}
+
+.p {
+  @apply text-base text-gray-500;
+}
+
+.small {
+  @apply text-sm text-gray-500;
+}
+
+/* Colors */
+.color-primary {
+  @apply text-black;
+}
+
+.color-secondary {
+  @apply text-white;
+}
+
+.color-gray {
+  @apply text-gray-500;
+}
+
+.color-success {
+  @apply text-green-600;
+}
+
+.color-warning {
+  @apply text-yellow-600;
+}
+
+.color-error {
+  @apply text-red-600;
+}
+
+/* Font size */
+.size-12 {
+  @apply text-xs font-normal;
+}
+
+.size-14 {
+  @apply text-sm font-normal;
+}
+
+.size-16 {
+  @apply text-base font-normal;
+}
+
+.size-18 {
+  @apply text-lg font-normal;
+}
+
+.size-20 {
+  @apply text-xl font-semibold;
+}
+
+.size-24 {
+  @apply text-2xl font-semibold;
+}
+
+.size-30 {
+  @apply text-3xl font-semibold;
+}
+
+.size-36 {
+  @apply text-4xl font-bold;
+}
+
+.size-48 {
+  @apply text-5xl font-bold;
+}
+
+/* Font weights */
+.weight-100 {
+  @apply font-thin;
+}
+
+.weight-200 {
+  @apply font-extralight;
+}
+
+.weight-300 {
+  @apply font-light;
+}
+
+.weight-400 {
+  @apply font-normal;
+}
+
+.weight-500 {
+  @apply font-medium;
+}
+
+.weight-600 {
+  @apply font-semibold;
+}
+
+.weight-700 {
+  @apply font-bold;
+}
+
+.weight-800 {
+  @apply font-extrabold;
+}
+
+.weight-900 {
+  @apply font-black;
+}
