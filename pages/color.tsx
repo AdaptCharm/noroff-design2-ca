@@ -108,7 +108,7 @@ export default function _Button() {
             <div className="space-y-8" key={idx}>
               <Text as="h3">{category.name}</Text>
               <div className="border border-gray-200">
-                {category.colorMap.map((c, idx) => (
+                {category.colorMap.map((c: any, idx) => (
                   <div
                     className={cn(
                       'flex items-center justify-between gap-6 p-6',
@@ -117,7 +117,7 @@ export default function _Button() {
                     key={idx}
                   >
                     <div className="flex-1">
-                      <Text as="h4" color={`${c.color}`}>
+                      <Text as="h4" color={c.color}>
                         {c.name}
                       </Text>
                     </div>

@@ -27,7 +27,7 @@ export default function _Badge() {
           <div className="space-y-8">
             <Text as="h3">Sizes</Text>
             <div className="flex flex-col gap-8 md:flex-row border border-gray-200 rounded-md p-6">
-              {['small', 'medium', 'large'].map((size, idx) => (
+              {['small', 'medium', 'large'].map((size: any, idx) => (
                 <div className="flex items-center" key={idx}>
                   <Badge size={size}>{size}</Badge>
                 </div>
@@ -39,7 +39,7 @@ export default function _Badge() {
           <div className="space-y-8">
             <Text as="h3">Shapes</Text>
             <div className="flex flex-col gap-8 md:flex-row border border-gray-200 rounded-md p-6">
-              {['square', 'rounded', 'circle'].map((shape, idx) => (
+              {['square', 'rounded', 'circle'].map((shape: any, idx) => (
                 <div className="flex items-center" key={idx}>
                   <Badge shape={shape}>{shape}</Badge>
                 </div>
@@ -52,7 +52,7 @@ export default function _Badge() {
             <Text as="h3">Colors</Text>
             <div className="flex flex-col gap-8 md:flex-row border border-gray-200 rounded-md p-6">
               {['primary', 'secondary', 'success', 'warning', 'error'].map(
-                (color, idx) => (
+                (color: any, idx) => (
                   <div className="flex items-center" key={idx}>
                     <Badge color={color}>{color}</Badge>
                   </div>

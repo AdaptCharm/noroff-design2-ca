@@ -28,7 +28,7 @@ export default function _Link() {
             <div className="border border-gray-200 rounded-md p-6">
               <div className="flex flex-col gap-8">
                 <div className="flex items-center gap-8 md:flex-row">
-                  {['large'].map((size, idx) => (
+                  {['large'].map((size: any, idx) => (
                     <Link href="#" key={idx}>
                       <Button size={size}>
                         <Text as="span">This button is a link.</Text>

@@ -26,7 +26,7 @@ export default function _Input() {
           <div className="space-y-8">
             <Text as="h3">Sizes</Text>
             <div className="flex flex-col gap-8 md:flex-row border border-gray-200 rounded-md p-6">
-              {['small', 'medium', 'large'].map((size, idx) => (
+              {['small', 'medium', 'large'].map((size: any, idx) => (
                 <div className="flex items-center" key={idx}>
                   <Input placeholder={size} size={size} capitalize />
                 </div>
@@ -38,12 +38,12 @@ export default function _Input() {
           <div className="space-y-8">
             <Text as="h3">Prefix</Text>
             <div className="flex flex-col gap-8 md:flex-row border border-gray-200 rounded-md p-6">
-              {['small', 'medium', 'large'].map((size, idx) => (
+              {['small', 'medium', 'large'].map((size: any, idx) => (
                 <div className="flex items-center" key={idx}>
                   <Input
                     placeholder={size}
                     size={size}
-                    prefix={<SparklesIcon />}
+                    prefix={(<SparklesIcon />) as any}
                     capitalize
                   />
                 </div>
@@ -55,7 +55,7 @@ export default function _Input() {
           <div className="space-y-8">
             <Text as="h3">Suffix</Text>
             <div className="flex flex-col gap-8 md:flex-row border border-gray-200 rounded-md p-6">
-              {['small', 'medium', 'large'].map((size, idx) => (
+              {['small', 'medium', 'large'].map((size: any, idx) => (
                 <div className="flex items-center" key={idx}>
                   <Input
                     placeholder={size}
@@ -72,12 +72,12 @@ export default function _Input() {
           <div className="space-y-8">
             <Text as="h3">Prefix &amp; Suffix</Text>
             <div className="flex flex-col gap-8 md:flex-row border border-gray-200 rounded-md p-6">
-              {['small', 'medium', 'large'].map((size, idx) => (
+              {['small', 'medium', 'large'].map((size: any, idx) => (
                 <div className="flex items-center" key={idx}>
                   <Input
                     placeholder={size}
                     size={size}
-                    prefix={<SparklesIcon />}
+                    prefix={(<SparklesIcon />) as any}
                     suffix={<SparklesIcon />}
                     capitalize
                   />
@@ -90,12 +90,14 @@ export default function _Input() {
           <div className="space-y-8">
             <Text as="h3">Ghost Prefix</Text>
             <div className="flex flex-col gap-8 md:flex-row border border-gray-200 rounded-md p-6">
-              {['small', 'medium', 'large'].map((size, idx) => (
+              {['small', 'medium', 'large'].map((size: any, idx) => (
                 <div className="flex items-center" key={idx}>
                   <Input
                     placeholder={size}
                     size={size}
-                    prefix={(idx === 0 || idx === 2) && <SparklesIcon />}
+                    prefix={
+                      (idx === 0 || idx === 2) && ((<SparklesIcon />) as any)
+                    }
                     prefixStyling={false}
                     suffix={(idx === 1 || idx === 2) && <SparklesIcon />}
                     suffixStyling={false}
@@ -114,7 +116,7 @@ export default function _Input() {
                 <div className="flex items-center" key={idx}>
                   <Input
                     placeholder={text}
-                    prefix={<SparklesIcon />}
+                    prefix={(<SparklesIcon />) as any}
                     disabled
                   />
                 </div>

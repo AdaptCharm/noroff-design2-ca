@@ -18,7 +18,7 @@ export default function _Text() {
             <Text as="h3">Default</Text>
             <div className="flex flex-col gap-2 border border-gray-200 rounded-md p-6">
               {['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'small'].map(
-                (component, idx) => (
+                (component: any, idx) => (
                   <Text as={component} color="primary" key={idx}>
                     Lorem dolar ipsum. ({component})
                   </Text>
@@ -31,11 +31,13 @@ export default function _Text() {
           <div className="space-y-8">
             <Text as="h3">Sizes</Text>
             <div className="flex flex-col gap-2 border border-gray-200 rounded-md p-6">
-              {[12, 14, 16, 18, 20, 24, 30, 36, 48].reverse().map((size) => (
-                <Text size={size} color="primary" key={size}>
-                  Lorem dolar ipsum. ({size} px)
-                </Text>
-              ))}
+              {[12, 14, 16, 18, 20, 24, 30, 36, 48]
+                .reverse()
+                .map((size: any) => (
+                  <Text size={size} color="primary" key={size}>
+                    Lorem dolar ipsum. ({size} px)
+                  </Text>
+                ))}
             </div>
           </div>
 
@@ -45,7 +47,7 @@ export default function _Text() {
             <div className="flex flex-col gap-2 border border-gray-200 rounded-md p-6">
               {[100, 200, 300, 400, 500, 600, 700, 800, 900]
                 .reverse()
-                .map((weight) => (
+                .map((weight: any) => (
                   <Text size={16} weight={weight} color="primary" key={weight}>
                     Lorem dolar ipsum. ({weight})
                   </Text>
@@ -58,7 +60,7 @@ export default function _Text() {
             <Text as="h3">Colors</Text>
             <div className="flex flex-col gap-2 border border-gray-200 rounded-md p-6">
               {['primary', 'gray', 'success', 'warning', 'error'].map(
-                (color) => (
+                (color: any) => (
                   <Text size={16} color={color} key={color}>
                     Lorem dolar ipsum. ({color})
                   </Text>

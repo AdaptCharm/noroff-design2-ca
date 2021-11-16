@@ -42,15 +42,17 @@ export default function _Tooltip() {
             <Text as="h3">Placements</Text>
             <div className="border border-gray-200 rounded-md p-6">
               <div className="flex gap-8 justify-center md:justify-start">
-                {['top', 'right', 'bottom', 'left'].map((position, idx) => (
-                  <Tooltip
-                    placement={position}
-                    text="Lorem ipsum dolar."
-                    key={idx}
-                  >
-                    <Text capitalize>{position}</Text>
-                  </Tooltip>
-                ))}
+                {['top', 'right', 'bottom', 'left'].map(
+                  (position: any, idx) => (
+                    <Tooltip
+                      placement={position}
+                      text="Lorem ipsum dolar."
+                      key={idx}
+                    >
+                      <Text capitalize>{position}</Text>
+                    </Tooltip>
+                  )
+                )}
               </div>
             </div>
           </div>
@@ -60,7 +62,7 @@ export default function _Tooltip() {
             <Text as="h3">Sizes</Text>
             <div className="border border-gray-200 rounded-md p-6">
               <div className="flex gap-8 justify-center md:justify-start">
-                {['small', 'medium', 'large'].map((size, idx) => (
+                {['small', 'medium', 'large'].map((size: any, idx) => (
                   <Tooltip size={size} text="Lorem ipsum dolar." key={idx}>
                     <Text capitalize>{size}</Text>
                   </Tooltip>
@@ -75,7 +77,7 @@ export default function _Tooltip() {
             <div className="border border-gray-200 rounded-md p-6">
               <div className="flex gap-8 justify-center md:justify-start">
                 {['primary', 'secondary', 'success', 'warning', 'error'].map(
-                  (color, idx) => (
+                  (color: any, idx) => (
                     <Tooltip color={color} text="Lorem ipsum dolar." key={idx}>
                       <Text capitalize>{color}</Text>
                     </Tooltip>
@@ -90,7 +92,7 @@ export default function _Tooltip() {
             <Text as="h3">Shapes</Text>
             <div className="border border-gray-200 rounded-md p-6">
               <div className="flex gap-8 justify-center md:justify-start">
-                {['circle', 'rounded', 'square'].map((shape, idx) => (
+                {['circle', 'rounded', 'square'].map((shape: any, idx) => (
                   <Tooltip shape={shape} text="Lorem ipsum dolar." key={idx}>
                     <Text capitalize>{shape}</Text>
                   </Tooltip>
